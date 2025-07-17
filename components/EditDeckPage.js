@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
-import Router from 'next/router';
+import { useRouter } from 'next/navigation';
 export default function EditDeckPage({ initialDeck }) {
   const [name, setName] = useState(initialDeck.name);
   const [cards, setCards] = useState(initialDeck.cards);
-
+  const router = useRouter();
   const handleCardChange = (index, side, value) => {
     const newCards = [...cards];
     newCards[index][side] = value;
@@ -28,7 +28,8 @@ export default function EditDeckPage({ initialDeck }) {
       body: JSON.stringify({ name, cards }),
     });
     alert('Deck saved!');
-    Router.push(`/decks/${initialDeck.id}`)
+    router.push(`/decks/${initialDeck.id}/study`);
+    
 
   };
 

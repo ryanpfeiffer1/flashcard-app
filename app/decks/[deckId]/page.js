@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-export default async function DeckPage({ params }) {
+export default async function DeckPage(props) {
+  const params = await props.params;
   const res = await fetch(`http://localhost:3000/api/decks/${params.deckId}`, { cache: 'no-store' });
   const deck = await res.json();
 

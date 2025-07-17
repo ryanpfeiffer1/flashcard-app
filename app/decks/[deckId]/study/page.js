@@ -1,6 +1,7 @@
 import StudyPage from "@/components/StudyPage";
 
-export default async function StudyRoute({ params }) {
+export default async function StudyRoute(props) {
+  const params = await props.params;
   const res = await fetch(`http://localhost:3000/api/decks`, { cache: 'no-store' });
   const decks = await res.json();
   const deck = decks.find((d) => d.id === parseInt(params.deckId));

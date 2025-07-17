@@ -23,7 +23,8 @@ function writeDecks(decks) {
 }
 
 // GET /api/decks/:deckId
-export async function GET(_, { params }) {
+export async function GET(_, props) {
+  const params = await props.params;
   const decks = readDecks();
   const deck = decks.find((d) => d.id === parseInt(params.deckId));
   if (!deck) {
@@ -33,7 +34,8 @@ export async function GET(_, { params }) {
 }
 
 // PUT /api/decks/:deckId
-export async function PUT(request, { params }) {
+export async function PUT(request, props) {
+  const params = await props.params;
   const updatedDeck = await request.json();
   const decks = readDecks();
 
