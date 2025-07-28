@@ -42,7 +42,7 @@ export default async function DeckPage(props) {
             href="/decks"
             className="px-5 py-2 bg-gray-700 hover:bg-gray-600 rounded-md text-white transition"
           >
-            ← Back to Decks
+            ← View All Decks
           </Link>
         </div>
       </div>

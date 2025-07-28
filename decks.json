@@ -10,14 +10,84 @@
       {
         "front": "CPU",
         "back": "Central Processing Unit"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Artificial Intelligence - AI Generated",
+    "cards": [
+      {
+        "front": "What is Artificial Intelligence (AI)?",
+        "back": "Artificial Intelligence refers to the development of computer systems that can perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making."
       },
       {
-        "front": "test3df",
-        "back": "test3sdfs"
+        "front": "What are the main types of AI?",
+        "back": "The main types of AI include Narrow or Weak AI, which is designed to perform a specific task, Machine Learning (ML), Deep Learning (DL), and General or Strong AI, which aims to create intelligent machines that can perform any intellectual task."
       },
       {
-        "front": "dsfdsf",
-        "back": "test4sdfdsf"
+        "front": "What is the difference between Machine Learning and Deep Learning?",
+        "back": "Machine Learning is a type of AI that involves training algorithms on data to make predictions or decisions. Deep Learning is a subset of ML that uses neural networks with multiple layers to learn complex patterns in data."
+      },
+      {
+        "front": "What is Natural Language Processing (NLP)?",
+        "back": "Natural Language Processing (NLP) is a field of AI that deals with the interaction between computers and humans in natural language, enabling computers to understand, interpret, and generate human language."
+      },
+      {
+        "front": "What are some applications of Artificial Intelligence?",
+        "back": "Some examples of AI applications include virtual assistants like Siri and Alexa, self-driving cars, facial recognition systems, chatbots, and predictive maintenance in industries such as healthcare and finance."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hair how to",
+    "cards": [
+      {
+        "front": "What is the best way to wash your hair?",
+        "back": "Use a gentle shampoo and conditioner suitable for your hair type, and massage it into your scalp before rinsing."
+      },
+      {
+        "front": "How often should you trim your hair?",
+        "back": "Trimming your hair every 6-8 weeks can help maintain healthy hair growth, prevent split ends, and keep your hair looking its best."
+      },
+      {
+        "front": "What is the benefit of using a wide-tooth comb on wet hair?",
+        "back": "Using a wide-tooth comb on wet hair helps to detangle and minimize breakage, reducing the risk of knots and tangles."
+      },
+      {
+        "front": "How can you prevent frizz and add shine to your hair?",
+        "back": "Applying a leave-in conditioner or hair serum, using a heat protectant spray when styling with heat tools, and avoiding excessive water exposure can help reduce frizz and add shine to your hair."
+      },
+      {
+        "front": "What is the importance of getting regular trims for curly hair?",
+        "back": "Regular trims (every 4-6 weeks) are essential for curly hair as they help maintain defined curls, prevent breakage, and keep frizz under control."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Wildlife Survival - AI Generated",
+    "cards": [
+      {
+        "front": "What is the primary source of food for most wild animals?",
+        "back": "Insects, plants, fruits, and small invertebrates."
+      },
+      {
+        "front": "Why is finding or creating a shelter important for wildlife survival?",
+        "back": "Shelter provides protection from extreme weather conditions, predators, and harsh environments."
+      },
+      {
+        "front": "What should you do if you encounter an animal in the wild that appears aggressive or threatening?",
+        "back": "Keep a safe distance, stay calm, and slowly back away without direct eye contact."
+      },
+      {
+        "front": "How can wildlife survive during extreme weather conditions such as droughts or floods?",
+        "back": "Find shade or water sources, conserve energy, and be prepared to adapt behavior to the changing environment."
+      },
+      {
+        "front": "What is a crucial aspect of human-wildlife coexistence that promotes survival for both humans and animals?",
+        "back": "Understanding and respecting animal habitats, behaviors, and spatial boundaries."
       }
     ]
   }

@@ -21,43 +21,53 @@ export default function HomeClient({ decks }) {
         </a>
       </section>
 
-{/* Decks Section */}
-<main id="decks" className="w-full px-4 py-10 flex-grow text-center">
-  <h2 className="text-4xl font-extrabold text-center mb-10 text-blue-400">
-    Your Flashcard Decks
-  </h2>
+      {/* Decks Section */}
+      <main id="decks" className="w-full max-w-7xl mx-auto px-4 py-10 flex-grow text-center">
+        <h2 className="text-4xl font-extrabold text-center mb-10 text-blue-400">
+          Your Flashcard Decks
+        </h2>
 
-  {decks.length === 0 ? (
-    <div className="text-center">
-      <p className="text-gray-400 text-lg mb-4">You have no decks yet.</p>
-      <Link
-        href="/create-deck"
-        className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold shadow transition-transform hover:scale-105"
-      >
-        Create Your First Deck
-      </Link>
-    </div>
-  ) : (
-    <div className="flex justify-center">
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {decks.map((deck) => (
-          <div
-            key={deck.id}
-            className="bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition-shadow border border-gray-700 w-72"
-          >
-            <h3 className="text-xl font-semibold text-white mb-3 truncate">{deck.name}</h3>
+        {decks.length === 0 ? (
+          <div className="text-center">
+            <p className="text-gray-400 text-lg mb-4">You have no decks yet.</p>
             <Link
-              href={`/decks/${deck.id}`}
-              className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-200"
+              href="/create-deck"
+              className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg font-semibold shadow transition-transform hover:scale-105"
             >
-              View {deck.cards?.length || 0} {deck.cards?.length === 1 ? 'card' : 'cards'}
+              Create Your First Deck
             </Link>
           </div>
-        ))}
-      </div>
-    </div>
-  )}
-</main>
+        ) : (
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {decks.map((deck) => (
+              <div
+                key={deck.id}
+                className="bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition-shadow border border-gray-700 w-full max-w-md mx-auto"
+              >
+                <h3 className="text-xl font-semibold text-white mb-3 truncate">
+                  {deck.name}
+                </h3>
+                <Link
+                  href={`/decks/${deck.id}`}
+                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-200"
+                >
+                  View {deck.cards?.length || 0} {deck.cards?.length === 1 ? 'card' : 'cards'}
+                </Link>
+              </div>
+            ))}
+
+            {/* Create New Deck Card */}
+            <div className="bg-gray-800 shadow-md rounded-2xl p-6 hover:shadow-lg transition-shadow border border-gray-700 w-full max-w-md mx-auto flex items-center justify-center">
+              <Link
+                href="/create-deck"
+                className="text-white font-bold text-sm bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition"
+              >
+                + Create New Deck
+              </Link>
+            </div>
+          </div>
+        )}
+      </main>
 
       {/* Features Section */}
       <section className="py-20 px-4 bg-gray-900">
